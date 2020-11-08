@@ -1,7 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
-from django.http import HttpResponse
-
 def index(request):
-    return HttpResponse("Hola Mundo!.")
+     contenido= { 'nombre_sitio': 'LibrosOnline' }
+     return render(request, 'vistaprevia/index.html', contenido)
