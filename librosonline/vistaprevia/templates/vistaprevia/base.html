@@ -8,11 +8,12 @@
         <meta name="description" content="{{ descripcion }}" />
         <link rel="stylesheet" type="text/css" href="{% static 'vistaprevia/css/style.css' %}" />
         <link rel="stylesheet" type="text/css" href="{% static 'vistaprevia/css/bootstrap.css' %}" />
-        {% comment %} <script type="text/javascript" src="{% static 'vistaprevia/js/jquery.js' %}"></script> {% endcomment %}
+        <script type="text/javascript" src="{% static 'vistaprevia/js/jquery-3.5.1.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'vistaprevia/js/bootstrap.js' %}"></script>
         
     </head>
     <body>
         {% block contenedor %}{% endblock %}
+        {% block scripts %}{% endblock %}
     </body>
 </html>
